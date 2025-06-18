@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-color {
+  @apply inline-block bg-gradient-to-r from-orange-400 to-pink-600;
+}
+
+
+
+.bg-primary-color {
+  @apply inline-block bg-gradient-to-r from-orange-400 to-pink-600;
+}
+
+
+
+@layer base {
+
+  input:focus::placeholder,
+  textarea:focus::placeholder {
+    color: transparent;
+  }
+}
