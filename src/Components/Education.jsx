@@ -15,7 +15,7 @@ const Education = () => {
     {
       name: "Gyankunj School/College",
       description:
-        "Gyankunj College/School is a respected academic institution celebrated for its dedication to educational excellence and the promotion of cultural values. Managed by Bhaktapur Municipality, it delivers high-quality education at an affordable cost, nurturing disciplined, socially conscious individuals.",
+        "Gyankunj College/School is a respected academic institution celebrated for its dedication to educational excellence and the promotion of cultural values. Managed by Kathmandu Municipality, it delivers high-quality education at an affordable cost, nurturing disciplined, socially conscious individuals.",
       address: "Ravibhawan,Kalanki",
       level: "+2",
       grade: "A",
