@@ -10,7 +10,7 @@ const Education = () => {
       level: "Bachelor",
       grade: "",
       status: "Running",
-      year: "",
+      year: "2026",
     },
     {
       name: "Gyankunj School/College",

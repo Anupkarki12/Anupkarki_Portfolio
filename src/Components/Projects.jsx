@@ -28,6 +28,11 @@ const Projects = () => {
       tech: "HTML, CSS, PHP, MySQL",
       gitLink: "https://github.com/Anupkarki12/Hotel-booking-system",
     },
+     {
+      name: "My Portfolio",
+      tech: "HTML, Tailwind CSS, react",
+      gitLink: "https://github.com/Anupkarki12/Anupkarki_Portfolio.git",
+    },
   ];
 
   return (
