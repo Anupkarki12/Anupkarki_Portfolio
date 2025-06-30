@@ -35,7 +35,7 @@ const Education = () => {
   ];
   return (
     <div className="flex w-full flex-col items-center justify-center gap-10 pb-20 text-sm leading-relaxed text-gray-400 md:text-lg">
-      <h1 className="text-center text-3xl font-semibold text-cyan-500">
+      <h1 className="text-center text-3xl font-semibold     text-indigo-400">
         My Education
       </h1>
       <div className="grid grid-cols-1 gap-14 md:grid-cols-2 md:flex-row lg:grid-cols-3">

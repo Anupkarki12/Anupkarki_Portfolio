@@ -45,7 +45,7 @@ const About = () => {
       id="about"
       className="flex w-full flex-col items-center justify-center pt-20 text-center text-gray-300"
     >
-      <h1 className="mb-10 text-3xl font-semibold text-cyan-500">About Me</h1>
+      <h1 className="mb-10 text-3xl font-semibold     text-indigo-400">About Me</h1>
       <div className="flex w-full flex-col items-center justify-center gap-10 text-justify md:text-center">
 
         <motion.p
@@ -56,7 +56,7 @@ const About = () => {
           transition={{ duration: 0.6, ease: "easeInOut" }}
           className="text-justify text-sm leading-relaxed text-gray-400 md:text-lg"
         >
-          I’m an enthusiastic frontend developer with a talent for building intuitive, attractive, and mobile-friendly web interfaces. My expertise lies in tools like React, Next.js, and Tailwind CSS, with a deep commitment to crafting smooth and engaging user experiences. I’m continuously driven to grow, embrace new challenges, and turn innovative ideas into functional, elegant solutions through clean code.
+          I’m an enthusiastic frontend developer with a talent for building intuitive, attractive, and mobile-friendly web interfaces. My expertise lies in tools like React and Tailwind CSS, with a deep commitment to crafting smooth and engaging user experiences. I’m continuously driven to grow, embrace new challenges, and turn innovative ideas into functional, elegant solutions through clean code.
         </motion.p>
 
         <div className="flex w-full items-center justify-center gap-20">

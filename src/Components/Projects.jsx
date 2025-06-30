@@ -40,7 +40,7 @@ const Projects = () => {
       id="projects"
       className="flex flex-col items-center gap-10 pt-20 text-gray-300"
     >
-      <h1 className="text-center text-3xl font-semibold text-cyan-500">
+      <h1 className="text-center text-3xl font-semibold     text-indigo-400">
         My Projects
       </h1>
       <div className="grid w-full grid-cols-1 gap-10 pb-20 md:grid-cols-2 lg:grid-cols-3">

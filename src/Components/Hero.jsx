@@ -46,7 +46,7 @@ const Hero = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="flex flex-col items-center justify-center gap-5 text-center md:items-start"
         >
-          <h1 className="text-xl font-semibold text-cyan-500 sm:text-2xl md:text-4xl">
+          <h1 className="text-xl font-semibold     text-indigo-400 sm:text-2xl md:text-4xl">
             I'm Anup Karki.
           </h1>
           <span className="lg:2xl mt-1 text-lg font-semibold text-gray-400 md:text-xl">
@@ -80,7 +80,7 @@ const Hero = () => {
             </div>
 
             {/* Social Icons */}
-            <div className="mt-4 flex w-full items-center gap-5 text-2xl text-cyan-500">
+            <div className="mt-4 flex w-full items-center gap-5 text-2xl     text-indigo-400">
               <a
                 href="https://facebook.com"
                 target="_blank"

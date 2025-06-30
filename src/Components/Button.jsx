@@ -3,7 +3,7 @@ const Button = ({ type, onClick, text }) => {
     <button
       onClick={onClick}
       type={type}
-      className={`rounded-lg border border-gray-400 bg-cyan-600 p-2 text-sm text-gray-200 shadow-lg transition-transform duration-700 hover:scale-110`}
+      className={`rounded-lg border border-gray-400 bg-indigo-600 p-2 text-sm text-gray-200 shadow-lg transition-transform duration-700 hover:scale-110`}
     >
       {text}
     </button>

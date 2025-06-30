@@ -47,7 +47,7 @@ const Header = () => {
   return (
     <nav className="liquid-bg fixed left-0 top-0 z-50 w-full bg-opacity-80 backdrop-blur-md px-5 shadow-lg md:px-10 lg:px-20">
       <div className="relative z-20 flex items-center justify-between py-3">
-        <h1 className="cursor-pointer text-2xl font-bold text-cyan-500">
+        <h1 className="cursor-pointer text-2xl font-bold     text-indigo-400">
           A.Karki
         </h1>
 
@@ -56,8 +56,8 @@ const Header = () => {
             <li
               onClick={() => handleActiveLink(navLink.name)}
               key={index}
-              className={`cursor-pointer font-medium transition-colors duration-500 hover:text-cyan-400 ${
-                activeNavLink === navLink.name ? "text-cyan-500" : ""
+              className={`cursor-pointer font-medium transition-colors duration-500 hover:text-indigo-400 ${
+                activeNavLink === navLink.name ? "text-indigo-500" : ""
               }`}
             >
               <a href={navLink.link}>{navLink.name}</a>
@@ -73,7 +73,7 @@ const Header = () => {
           {menuOpen ? (
             <IoClose className="text-red-500" />
           ) : (
-            <FiMenu className="text-cyan-400" />
+            <FiMenu className="     text-indigo-400" />
           )}
         </div>
       </div>
@@ -91,7 +91,7 @@ const Header = () => {
               setMenuOpen(false);
             }}
             key={index}
-            className={`cursor-pointer font-medium transition-colors duration-500 hover:text-cyan-400 ${
+            className={`cursor-pointer font-medium transition-colors duration-500 hover:     text-indigo-400 ${
               activeNavLink === navLink.name ? "text-cyan-500" : ""
             }`}
           >
