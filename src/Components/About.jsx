@@ -1,8 +1,8 @@
 import image from "../assets/hello.jpg";
-import Education from "./Education";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import Education from "../Education";
 
 const About = () => {
   const popVariants = {
