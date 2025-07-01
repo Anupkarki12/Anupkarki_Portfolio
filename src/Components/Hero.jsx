@@ -1,5 +1,6 @@
 import { FaFacebookF, FaWhatsapp, FaGithub } from "react-icons/fa";
 import heroImage from "../assets/file.jpg";
+import resume from "../assets/AnupKarkiResume.pdf";
 import Button from "./Button";
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
@@ -46,10 +47,10 @@ const Hero = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="flex flex-col items-center justify-center gap-5 text-center md:items-start"
         >
-          <h1 className="text-xl font-semibold     text-indigo-400 sm:text-2xl md:text-4xl">
+          <h1 className="text-xl font-semibold text-indigo-400 sm:text-2xl md:text-4xl">
             I'm Anup Karki.
           </h1>
-          <span className="lg:2xl mt-1 text-lg font-semibold text-gray-400 md:text-xl">
+          <span className="mt-1 text-lg font-semibold text-gray-400 md:text-xl">
             frontend developer based in Nepal.
           </span>
           <p className="text-justify text-sm leading-relaxed text-gray-400 md:max-w-md md:text-lg">
@@ -69,18 +70,21 @@ const Hero = () => {
                   text="Connect With Me"
                 />
               </a>
-              <a
-                href="/src/my Professional Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-auto"
-              >
-                <Button type="button" text="See My Resume" />
-              </a>
+
+              {/* FIXED RESUME LINK */}
+             <a
+  href={resume}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-auto"
+>
+  <Button type="button" text="See My Resume" />
+</a>
+
             </div>
 
             {/* Social Icons */}
-            <div className="mt-4 flex w-full items-center gap-5 text-2xl     text-indigo-400">
+            <div className="mt-4 flex w-full items-center gap-5 text-2xl text-indigo-400">
               <a
                 href="https://facebook.com"
                 target="_blank"
