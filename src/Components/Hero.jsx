@@ -1,28 +1,9 @@
 import { FaFacebookF, FaWhatsapp, FaGithub } from "react-icons/fa";
 import heroImage from "../assets/file.jpg";
-import resume from "../assets/AnupKarkiResume.pdf";
+import resume from "../assets/AnupKarkiResume .pdf";
 import Button from "./Button";
-import { useEffect, useRef } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
-
-const popVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-};
 
 const Hero = () => {
-  const textRef = useRef(null);
-  const controls = useAnimation();
-  const isInView = useInView(textRef, { once: false, margin: "-100px" });
-
-  useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
-  }, [isInView, controls]);
-
   return (
     <main
       id="home"
@@ -39,19 +20,12 @@ const Hero = () => {
         </div>
 
         {/* Text Section */}
-        <motion.div
-          ref={textRef}
-          variants={popVariants}
-          initial="hidden"
-          animate={controls}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="flex flex-col items-center justify-center gap-5 text-center md:items-start"
-        >
+        <div className="flex flex-col items-center justify-center gap-5 text-center md:items-start">
           <h1 className="text-xl font-semibold text-indigo-400 sm:text-2xl md:text-4xl">
             I'm Anup Karki.
           </h1>
           <span className="mt-1 text-lg font-semibold text-gray-400 md:text-xl">
-            frontend developer based in Nepal.
+            frontend developer based in Nepal || Junior Pentester.
           </span>
           <p className="text-justify text-sm leading-relaxed text-gray-400 md:max-w-md md:text-lg">
             I’m a frontend developer focused on building clean, responsive, and
@@ -71,16 +45,14 @@ const Hero = () => {
                 />
               </a>
 
-              {/* FIXED RESUME LINK */}
-             <a
-  href={resume}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-auto"
->
-  <Button type="button" text="See My Resume" />
-</a>
-
+              <a
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-auto"
+              >
+                <Button type="button" text="See My Resume" />
+              </a>
             </div>
 
             {/* Social Icons */}
@@ -111,7 +83,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
       <hr className="w-full border border-gray-500" />
     </main>
